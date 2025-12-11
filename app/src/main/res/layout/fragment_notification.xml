@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".ui.fragments.NotificationFragment">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_brown"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tvNotificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/grandstander_regular" />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/grandstander_regular"/>
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No notifications yet"
+        android:textColor="@color/text_secondary"
+        android:textSize="18sp"
+        android:fontFamily="@font/grandstander_regular"
+        android:visibility="gone"
+        android:layout_marginTop="100dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="24dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Today Section -->
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:fontFamily="@font/grandstander_medium"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Today Notifications Recycler -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTodayNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginBottom="24dp"
+                tools:listitem="@layout/item_notification_card" />
+
+            <!-- This Week Section -->
+            <TextView
+                android:id="@+id/tvThisWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Week"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/grandstander_medium"
+                android:layout_marginBottom="12dp" />
+
+            <!-- This Week Notifications Recycler -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWeekNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                tools:listitem="@layout/item_notification_card" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

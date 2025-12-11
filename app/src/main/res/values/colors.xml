@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="red">#9E2B23</color>
+    <color name="coffee1">#3F1D0E</color>
+    <color name="coffee2">#895737</color>
+    <color name="caramel1">#A2663C</color>
+    <color name="caramel2">#C08552</color>
+    <color name="americano">#1F1D1D</color>
+    <color name="cream1">#F3E9DC</color>
+    <color name="milk">#E6E2DC</color>
+    <color name="cream2">#E4CDB0</color>
+
+    <color name="background_color">#F3E9DC</color>
+    <color name="card_background">#E4CDB0</color>
+    <color name="input_background">#E6E2D7</color>
+    <color name="primary_brown">#3F1D0E</color>
+    <color name="text_primary">#3F1D0E</color>
+    <color name="text_secondary">#5D4037</color>
+    <color name="text_hint">#8D6E63</color>
+    <color name="divider_color">#8D6E63</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_brown">#A2663C</color>
+
+</resources>

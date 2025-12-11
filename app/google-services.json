@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "381642720680",
+    "firebase_url": "https://cuppa-c89f3-default-rtdb.firebaseio.com",
+    "project_id": "cuppa-c89f3",
+    "storage_bucket": "cuppa-c89f3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381642720680:android:04978a317469c187c7c99d",
+        "android_client_info": {
+          "package_name": "com.cuppa.iot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381642720680-unji539msteah6sg9so022rj8feqshvb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cuppa.iot",
+            "certificate_hash": "63fa852222312d75365ed8e820d3bebfb5ca3b06"
+          }
+        },
+        {
+          "client_id": "381642720680-jebq27ug84ok6pdnd2nbgrq2t3e23bub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2n5eU0b_lcQODf_6M8hUPhIFQStCx4io"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381642720680-9rr1adai66rn9kcjditvpec4ll6d0h3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

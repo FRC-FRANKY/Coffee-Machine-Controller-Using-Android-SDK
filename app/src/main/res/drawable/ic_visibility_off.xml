@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+
+    <!-- Strikethrough eye -->
+    <path
+        android:fillColor="@color/coffee1"
+        android:pathData="M2,4.27L3.28,3L21,20.72L19.73,22L16.89,19.16C15.69,19.69 14.39,20 13,20C7,20 2.73,15.11 1,12C1.74,10.65 2.79,9.48 4.05,8.55L2,6.5L2,4.27M12,6C16.42,6 20.21,8.83 22,12C21.37,13.16 20.5,14.22 19.46,15.09L17.96,13.59C18.61,13 19.19,12.28 19.65,11.47C18.12,9.21 15.24,7.5 12,7.5C11.2,7.5 10.43,7.65 9.71,7.92L8.17,6.38C9.26,6.13 10.61,6 12,6Z" />
+
+    <!-- Eye slash -->
+    <path
+        android:fillColor="@color/coffee1"
+        android:pathData="M12,9A3,3 0 0,1 15,12C15,12.35 14.93,12.69 14.82,13L12.12,10.3C12.41,10.11 12.7,10 13,10C13.55,10 14,10.45 14,11C14,11.19 13.96,11.37 13.89,11.53L12.47,10.11C12.63,10.04 12.81,10 13,10C13.55,10 14,10.45 14,11C14,11.55 13.55,12 13,12C12.45,12 12,11.55 12,11C12,10.81 12.04,10.63 12.11,10.47L13.53,11.89C13.37,11.96 13.19,12 13,12C12.45,12 12,11.55 12,11C12,10.45 12.45,10 13,10Z" />
+</vector>

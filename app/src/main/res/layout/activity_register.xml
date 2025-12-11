@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fillViewport="true"
+    tools:context=".ui.activities.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- Logo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="277dp"
+                android:layout_height="100dp"
+                android:contentDescription="Cuppa Logo"
+                android:src="@drawable/cuppa_name" />
+        </LinearLayout>
+
+        <!-- Register Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/card_background"
+            android:padding="24dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/grandstander_black"
+                android:text="Sign Up"
+                android:textColor="@color/text_primary"
+                android:textSize="28sp" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/input_background"
+                android:padding="16dp"
+                android:textSize="12dp"
+                android:textColor="@color/text_secondary"
+                android:textColorHint="@color/text_hint"
+                android:fontFamily="@font/grandstander_regular"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/input_background"
+                android:padding="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:textColorHint="@color/text_hint"
+                android:fontFamily="@font/grandstander_regular"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_visibility_off"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/input_background"
+                android:padding="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:textColorHint="@color/text_hint"
+                android:fontFamily="@font/grandstander_regular"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Confirm Password -->
+            <EditText
+                android:id="@+id/edtCPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Repeat Password"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_visibility_off"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/input_background"
+                android:padding="16dp"
+                android:textSize="12dp"
+                android:textColor="@color/text_secondary"
+                android:textColorHint="@color/text_hint"
+                android:fontFamily="@font/grandstander_regular"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Signup"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="@color/primary_brown"
+                android:fontFamily="@font/grandstander_regular"
+                android:layout_marginBottom="32dp" />
+
+            <!-- OR Divider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divider_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:text=" or "
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divider_color" />
+            </LinearLayout>
+
+            <!-- Google Sign In Button -->
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btnGoogleSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Login Redirect -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account? "
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/grandstander_regular" />
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/grandstander_regular"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- Bottom spacing -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+    </LinearLayout>
+</ScrollView>

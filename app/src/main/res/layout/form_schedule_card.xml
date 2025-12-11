@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="12dp"
+	app:cardCornerRadius="16dp"
+	app:cardElevation="6dp"
+	app:cardBackgroundColor="@color/card_background">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="16dp">
+
+		<!-- Title + Close -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="SCHEDULE"
+				android:textStyle="bold"
+				android:textColor="@color/americano"
+				android:textSize="16sp"/>
+
+			<Button
+				android:id="@+id/btnCloseForm"
+				android:layout_width="36dp"
+				android:layout_height="36dp"
+				android:text="X"
+				android:textStyle="bold"
+				android:textColor="@color/milk"
+				android:backgroundTint="@color/caramel1"
+				android:layout_gravity="end"
+				android:contentDescription="Close"
+				android:background="@drawable/button_rounded"/>
+		</LinearLayout>
+
+		<!-- Time Picker -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Time"
+			android:textColor="@color/americano"
+			android:textStyle="bold"
+			android:layout_marginTop="10dp"/>
+
+		<TimePicker
+			android:id="@+id/timePicker"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:timePickerMode="spinner"
+			android:layout_marginBottom="10dp"/>
+
+		<!-- Days -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Days"
+			android:textColor="@color/americano"
+			android:textStyle="bold"/>
+
+		<HorizontalScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:fillViewport="false"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="10dp">
+
+				<!-- Day buttons -->
+				<ToggleButton
+					android:id="@+id/tbSun"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textOn="S"
+					android:textOff="S"
+					android:layout_marginRight="6dp"/>
+
+				<ToggleButton
+					android:id="@+id/tbMon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textOn="M"
+					android:textOff="M"
+					android:layout_marginRight="6dp"/>
+
+				<ToggleButton
+					android:id="@+id/tbTue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textOn="T"
+					android:textOff="T"
+					android:layout_marginRight="6dp"/>
+
+				<ToggleButton
+					android:id="@+id/tbWed"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textOn="W"
+					android:textOff="W"
+					android:layout_marginRight="6dp"/>
+
+				<ToggleButton
+					android:id="@+id/tbThu"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textOn="T"
+					android:textOff="T"
+					android:layout_marginRight="6dp"/>
+
+				<ToggleButton
+					android:id="@+id/tbFri"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textOn="F"
+					android:textOff="F"
+					android:layout_marginRight="6dp"/>
+
+				<ToggleButton
+					android:id="@+id/tbSat"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textOn="S"
+					android:textOff="S"/>
+
+			</LinearLayout>
+		</HorizontalScrollView>
+
+		<!-- Save -->
+		<Button
+			android:id="@+id/btnSaveSchedule"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:text="Save"
+			android:textStyle="bold"
+			android:textColor="@color/milk"
+			android:background="@drawable/button_rounded"
+			android:backgroundTint="@color/caramel1"
+			android:layout_gravity="end"/>
+	</LinearLayout>
+
+</androidx.cardview.widget.CardView>

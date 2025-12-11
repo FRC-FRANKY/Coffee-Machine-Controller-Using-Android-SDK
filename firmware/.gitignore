@@ -1,0 +1,13 @@
+.pio/
+.vscode/
+build/
+cmake-build-*/
+*.elf
+*.bin
+*.map
+*.hex
+*.log
+.DS_Store
+Thumbs.db
+
+

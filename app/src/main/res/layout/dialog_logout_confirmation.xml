@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutLogoutDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/rounded"
+    android:backgroundTint="@color/card_background"
+    android:elevation="4dp">
+
+    <!-- Logout Message -->
+    <TextView
+        android:id="@+id/tvLogoutPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to log out?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:fontFamily="@font/grandstander_regular"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Button Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Yes Button -->
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="YES"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/grandstander_regular"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/primary_brown"
+            android:layout_marginEnd="12dp" />
+
+        <!-- No Button -->
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="NO"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="@font/grandstander_regular"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/input_background" />
+    </LinearLayout>
+
+</LinearLayout>

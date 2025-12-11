@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Profile Card -->
+        <LinearLayout
+            android:id="@+id/profileCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/card_background"
+            android:padding="24dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Avatar -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/avatar"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- ID Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID:"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/grandstander_regular" />
+
+                <TextView
+                    android:id="@+id/tvIdNumberDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="uid_here"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/grandstander_regular"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <!-- Username Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/grandstander_regular" />
+
+            <!-- Username Field -->
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/input_background"
+                android:padding="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:textColorHint="@color/text_hint"
+                android:fontFamily="@font/grandstander_regular"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/grandstander_regular" />
+
+            <!-- Email Field -->
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/input_background"
+                android:padding="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:textColorHint="@color/text_hint"
+                android:fontFamily="@font/grandstander_regular"
+                android:layout_marginBottom="16dp"
+                android:enabled="false"
+                android:focusable="false" />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Cancel"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_rounded"
+                    android:backgroundTint="@color/caramel1"
+                    android:textColor="@color/milk"
+                    android:fontFamily="@font/grandstander_regular"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Save"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_rounded"
+                    android:backgroundTint="@color/primary_brown"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/grandstander_regular" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+</ScrollView>
